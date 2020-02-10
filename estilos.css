@@ -1,45 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
 body{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+    background-color: aqua;
+
 }
-body > h1{
-    background-color: rgb(51, 192, 180);
-    margin: 10px;
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-input{
-    height: 24px;
-    border: 1px solid rgb(129, 131, 134);
-    border-radius: 5px;
+
+.login-container{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+
 }
-input[type=submit],
-input[type=button],
-input[type=file]{
-    background-color: rgb(142, 176, 238);
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: bolder;
-    height: 32px;
+.register, .login{
+    flex: 1;
+
 }
-input[type=submit]:hover,
-input[type=button]:hover,
-input[type=file]:hover{
-    color:  rgb(56, 99, 218);
-    background-color: #FFF;
+.register{
+    padding: 40px;
+    position: relative;
+
 }
-input[type=text]:invalid,
-input[type=date]:invalid,
-input[type=file]:invalid,
-input[type=url]:invalid,
-input[type=tel]:invalid{
-    background-color: rgb(250, 156, 156);
-    color: black;
+.register h2{
+    color: #797979;
+    margin-bottom: 30px;
+
+
 }
-input[type=text]:valid, /* Estilo para los input de tipo text, date y file */
-input[type=date]:valid, /* Cuando es valido su contenido */
-input[type=file]:valid,
-input[type=url]:valid,
-input[type=tel]:valid{
-    background-color: rgb(134, 250, 173);
-    color: black;
+.register input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #a8a8a8;
+    color:#333 ;
+
+
+}
+.register .submit{
+    width: auto;
+    padding: 10px;
+    background-color: #f17108;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+
+}
+.register::after{
+    content: '>';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    right: -23px;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px 1px 3px 1px rgba(0,0,0,.2);
+    color: #7c7c7c;
+
+}
+.login{
+    background-image: linear-gradient(to bottom right, #1ab6b6,#4cac6e);
+    padding: 40px;
+
+}
+.login h2{
+    color: #fff;
+    margin-bottom: 45px;
+}
+.login button i{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2 );
+    cursor: pointer;
+    position: relative;
+
+}
+.login .fb{
+    background-color: #3b5999;
+    border-style: none;
+    color: #fff;
+
 }
