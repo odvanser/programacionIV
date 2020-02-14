@@ -3,20 +3,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
 }
-body > h1{
-    background-color: rgb(33, 164, 179);
-    margin: 10px;
+h1{
+    background-color: blue;
+    margin: 0px;
 }
 input{
     height: 24px;
-    border: 1px solid rgb(129, 131, 134);
+    border: 1px solid rgb(143, 167, 12);
     border-radius: 5px;
 }
 input[type=submit],
 input[type=button],
 input[type=file]{
-    background-color: rgb(142, 176, 238);
-    color: #FFF;
+    background-color: rgb(9, 203, 252);
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: bolder;
     height: 32px;
@@ -24,22 +24,21 @@ input[type=file]{
 input[type=submit]:hover,
 input[type=button]:hover,
 input[type=file]:hover{
-    color:  rgb(56, 99, 218);
-    background-color: #FFF;
+color: rgb(143, 167, 12);
+background-color: #ffffff;
 }
 input[type=text]:invalid,
 input[type=date]:invalid,
 input[type=file]:invalid,
 input[type=url]:invalid,
 input[type=tel]:invalid{
-    background-color: rgb(250, 156, 156);
-    color: black;
+    background-color: rgb(208, 101, 235);
 }
-input[type=text]:valid, /* Estilo para los input de tipo text, date y file */
-input[type=date]:valid, /* Cuando es valido su contenido */
+input[type=text]:valid,
+input[type=date]:valid,
 input[type=file]:valid,
 input[type=url]:valid,
 input[type=tel]:valid{
-    background-color: rgb(134, 250, 173);
+    background-color: rgb(112, 211, 236);
     color: black;
 }
