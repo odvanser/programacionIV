@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded",e=>{
             'euro':0.92,
             'quetzal':7.63,
             'lempira':24.86,
-            'cordoba':34.20
+            'cordoba':34.20,
+            'libra':1,
+            'kilo':0.453592
         };
         $res.innerHTML = `Respuesta: ${ monedas[a] / monedas[de] * cantidad }`;
     });
 });
-© 2020 GitHub, Inc.
