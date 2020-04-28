@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienvenido prograIV</title>
-    <link rel="stylesheet" href="estilos.css">
-
-
+    <title>Bienvenido a Programacion IV</title>
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Bienvenido progra IV</h1>
-     <form name="frmControles"id="frmControles"method="get">
-         <input type="text" pattern="[a-zA-ZñÑ]{3,60}" required size="20" placeholder="Nombre"><br><br>
-         Fecha Nacimiento: <input type="date" required><br><br>
-         Status:
-         <label for="soltero">soltero</label><input type="radio" name="cboStatus" id="soltero">
-         <label for="acompañado">acompañado</label><input type="radio" name="cboStatus" id="acompañado">
-         <label for="casado">casado</label><input type="radio" name="cboStatus" id="casado">
-         <label for="divorciado">divorciado</label><input type="radio" name="cboStatus" id="divorciado">
-         <label for="viudo">viudo</label><input type="radio" name="cboStatus" id="viudo"><br><br>
-         Competencias:
-         <label for="php">php</label><input type="checkbox" name="php" id="php">
-         <label for="html">html</label><input type="checkbox" name="html" id="html">
-         <label for="css">css</label><input type="checkbox" name="css" id="css">
-         <label for="ajax">ajax</label><input type="checkbox" name="ajax" id="ajax">
-         <label for="json">json</label><input type="checkbox" name="json" id="json"><br><br>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#">PELIS</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-clientes" data-modulo="clientes" data-form="cliemtes" href="#">CLIENTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-alquiler" data-modulo="alquiler" data-form="alquiler" href="#">ALQUILER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mostrar-peliculas" data-modulo="peliculas" data-form="peliculas" href="#">PELICULAS</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="modulos">
+            <div class="modulos" id="vistas-clientes"></div>
+            <div class="modulos" id="vistas-buscar-clientes"></div>
+            <div class="modulos" id="vistas-alquiler"></div>
+            <div class="modulos" id="vistas-buscar-alquiler"></div>
+            <div class="modulos" id="vistas-peliculas"></div>
+            <div class="modulos" id="vistas-buscar-peliculas"></div>
+            
+        </div>
+    </div>
 
-         Subir Foto: <input type="file" name="foto" id="foto"><br><br>
-         Color Preferido: <input type="color"><br><br>
-         Web:  <input type="url" required><br><br>
-         Telefono: <input type="tel"required><br><br>
-         DUI: <input type="text" placeholder="00000000-0" pattern="[0-9]{8}[0-9]{1}" required><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="public/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="module" src="public/js/app.js"></script>
 
-         <input type="submit" value="Guardar">
-     </form>
 </body>
-</html> 
+</html>
